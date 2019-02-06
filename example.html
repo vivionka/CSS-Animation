@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="burger.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <title>CSS Animering</title>
+</head>
+<body>
+
+        <div class="container-example">
+                <div class="burger-container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+               
+                <div class="menu" id="menu">
+                <ul>
+                    <li><a href="./index.html">Hem</a></li>
+                    <li><a href="./facts.html">Fakta</a></li>
+                    <li><a href="./example.html">Exempel</a></li>
+                </ul></div>
+                <div class ="content">
+
+                    <h1 class="h1-black"><a href="./index.html">CSS Animation</a></h1>
+                    <div class="row">
+                    <!-- EXEMPEL 1 -->
+                    <div class="exempel-text">
+                    <p><b>EXEMPEL 1</b> <br> <br> Här ändras bakgrundsfärgen på ett div element från en färg till en annan i en evighetsloop. Kod: <br><br>
+                    @keyframes exempel1 { <br>
+                      from {background-color: red;} <br>
+                      to {background-color: yellow;} <br>
+                    } <br>
+                    div {
+                      width: 200px; <br>
+                      height: 200px; <br>
+                      background-color: red; <br>
+                      animation-name: exempel1; <br>
+                      animation-duration: 7s; <br>
+                      animation-iteration-count: infinite; <br>
+                    }</p>
+                </div>
+
+                    <div class="box">
+                        </div>
+                    </div>
+                    <!-- EXEMPEL 2 -->
+                    <div class="row">
+                        <div class="exempel-text">
+                        <p><b>EXEMPEL 2</b> <br> <br> Här ändras bakgrundsfärgen och positionen på ett div element när animationen har kommit till 25%, 50%, 75% och 100%. Kod: <br><br>
+                            @keyframes exempel2{ <br>
+                                0% {background-color: red; left: 0px;} <br>
+                                25%{background-color: violet; right: 20px;} <br>
+                                50% {background-color: green; right: 20px;} <br>
+                                75% {background-color: yellow; right: 20px;} <br>
+                                100% {background-color: turquoise; left: 100px;} <br>
+                            }
+                            <br>
+                            div {
+                            width: 100px; <br>
+                            height: 100px; <br>
+                            position: relative; <br>
+                            background-color: red; <br>
+                            border-style: solid; <br>
+                            border-width: 3px; <br>
+                            animation-name: exempel2; <br>
+                            animation-duration: 4s; <br>
+                            animation-iteration-count: 3; <br>
+                            animation-timing-function: ease-out; <br>
+                            
+                          }</p>
+                    </div>
+    
+                        <div class="box2">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="exempel-text">
+                                <p><b>EXEMPEL 3</b> <br> <br> Här ändras bredden av ett div element när man hovrar över med musen. Kod: <br> <br>
+                                    div { <br>
+                                        width: 100px; <br>
+                                        height: 100px; <br>
+                                        background: red; <br>
+                                        transition-property: width; <br>
+                                        transition-duration: 2s; <br>
+                                      } <br>
+                                    
+                                    div:hover { <br>
+                                        width: 300px; <br>
+                                      }
+                                </p>
+
+                            </div>
+                            <div class="box3"></div>
+                        </div>
+
+                    </div>
+        </div>
+</body>
+</html>

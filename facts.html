@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="burger.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <title>CSS Animering</title>
+</head>
+<body>
+        <div class="container-facts">
+                <div class="burger-container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                <div class="menu" id="menu">
+                <ul>
+                    <li><a href="./index.html">Hem</a></li>
+                    <li><a href="./facts.html">Fakta</a></li>
+                    <li><a href="./example.html">Exempel</a></li>
+                </ul></div>
+                <div class ="content">
+        
+                <h1 class="h1"><a href="./index.html">CSS Animation</a></h1>
+                <div class="row"> <!--fakta börjar här-->
+
+                    <div class="item-1">
+                            <h2>CSS Transition</h2>
+                            <p> <strong>För att skapa en CSS Transition behöver du tänka på två saker:</strong> <br><br>
+            
+                                &bull; CSS-egenskapen du vill lägga till en effekt på. <br><br>
+                                &bull; Bestämma effektens varaktighet som man sätter vid en start och slutreferens. <br><br>
+                                
+                                Detta kan vara när du till exempel gör en hover över eller klickar på ditt element och färgen ändras.
+                            </p>
+                    </div>
+                    <div class="item-1">
+                        <h2>Transition Properties</h2>
+                            <p>     
+                                    <strong>Det finns fyra olika Transition properties totalt, varav de två första är dem vanligaste:</strong> <br><br>
+                                
+                                    <strong>&bull; transition - property:</strong> anger egenskapen som övergångs effekten är för <br><br>
+                                
+                                    <strong>&bull; transition-duration:</strong> anger tidsperioden för övergången. Varaktigheten deklareras som <br> sekunder (s) eller millisekunder (ms) <br><br>
+                                
+                                    <strong>&bull; transition-timing-function:</strong> anger övergångens hastighet. Som standardvärde är den inställd på ease om inget annat anges <br><br>
+                                
+                                    <strong>&bull; transition-delay:</strong> anger när övergången börjar
+                            </p>  
+                    </div>
+                    <div class="item-1">
+                        <h2>Transition-timing olika värden</h2>
+                            <p>
+                                <strong>&bull; ease:</strong> anger övergångseffekten med en långsam start, sedan snabbare och utdraget slut <br><br>
+                                <strong>&bull; linear:</strong> effekten startar och slutar med samma fart <br><br>
+                                <strong>&bull; ease-in:</strong> effekten startar långsamt <br><br>
+                                <strong>&bull; ease-out:</strong> effekten får ett långsamt slut <br><br>
+                                <strong>&bull; ease-in-out:</strong> effekten har en långsam start och slutpunkt</p>
+                    </div>
+                    <div class="item-1">
+                        <h2>CSS Animering</h2>
+                        <p>
+                            &bull; En CSS animering ändrar ett element gradvis. <br> Man binder ett element till en animation <br><br>
+                            &bull; Man kan ändra på hur många egenskaper som man själv vill <br><br>
+                            &bull; Med hjälp av keyframes kan man sätta regler för hur animeringen sker        
+                        </p>
+                    </div>
+                    <div class="item-1">
+                        <h2>Keyframes</h2>
+                        <p>
+                                <strong>@keyframes</strong> beskriver de egenskaper (properties) som elementet kommer att ha och sätts inne i din CSS Style. Nedan är dem två viktigaste egenskaperna som behövs för att en animering ska bli till: <br><br>
+            
+                                <strong>&bull; animation-name:</strong> namn som till exempel beskriver din animation <br><br>
+                                <strong>&bull; animation-duration:</strong> varaktigheten som du vill din animation ska vara, den måste deklareras annars kommer den inte kunna starta. Standardinställningen är alltid på 0. <br><br>
+                                
+                            Keyframes börjar alltid från 0% och slutar på 100%.
+                            Man kan också använda sig av ‘from’ och’ to’ när man deklarerar en animering.
+                        </p>
+                     </div>
+                     <div class="item-1">
+                        <h2>Animation properties</h2> 
+                        <p>
+                            <strong>&bull; animation-timing-function:</strong> anger hur snabbt du vill animeringen ska gå <br><br>
+                                
+                            <strong>&bull; animation-delay:</strong> anger fördröjning innan animeringen startar <br><br>
+                                
+                            <strong>&bull; animation-iteration-count:</strong>  anger hur många gånger animeringen spelas upp. Sätter man den på infinite kommer den att spelas non-stop <br><br>
+                                
+                            <strong>&bull; animation-direction:</strong> anger åt vilket håll animeringen ska röra sig mot <br><br>
+                                
+                            <strong>&bull; animation-play-state:</strong> anger om animeringen körs eller pausas</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

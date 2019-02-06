@@ -1,0 +1,265 @@
+/*Första sidan(Index) + Navigeringsmeny*/
+.container{
+    height: 100vh;
+    background-image: url("https://wallpaperaccess.com/full/33513.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+}
+.infobox{
+    width: 30%;
+    padding: 8px;
+    margin: 40px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    background: white;
+    color: black;
+    opacity: 0.8;
+    border-radius: 0.25em; 
+ }
+ @keyframes fadeIn{
+    from { opacity: 0.1;}
+    to { opacity: 0.7; transform: translate(50px,50px);}
+}
+.img-rain{
+    width: 90%;
+    position: absolute;
+    animation-name: fadeIn;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+}
+.content{
+    max-width: 960px;
+    margin-left: 150px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h1 {
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 3em;
+    text-align: center;
+}
+h1 a{
+    width: 100%;
+    font-family: 'Bungee Shade', cursive;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.h1-black a{
+    color: black;
+    text-align: center;
+}
+.menu{
+   margin: 0;
+   padding: 0;
+   width: 150px;
+   top: 0px;
+   bottom: 0px;
+   background-color: #e656c2c0;
+   position: fixed;
+}
+
+.menu-open-respo {
+   display: block !important;
+   position: fixed;
+   z-index: 5;
+}
+ul{
+   list-style-type: none;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   padding: 0px;
+}
+li a{
+   display: block;
+   color: whitesmoke;
+   padding: 8px 16px;
+   text-decoration: none;
+   font-family: 'Amatic SC', cursive;
+   font-size: 3em;
+   text-align: left;
+}
+
+li a:hover{
+   background-color: #e656c2c9;
+   color: whitesmoke;
+   width: 118px;
+}
+/*Fakta sidan*/
+.container-facts{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    padding: 0px;
+    background-image: linear-gradient(90deg, #cd435e, #ef644b, #ff8f31, #febf0b, #e6f11a);
+    background-size: 500% 500%;
+    animation-name: BackgroundGradient;  
+    animation-duration: 25s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+.row {
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+.row div {
+    display: inline-block;
+}
+
+.item-1{
+    background-color: white;
+    opacity: 0.7;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(18, 18, 139, 0.911);
+    margin: 10px;
+    padding: 10px;   
+}
+
+.background-new-color{
+    background-image: linear-gradient(90deg, #cd435e, #ef644b, #ff8f31, #febf0b, #e6f11a);
+    background-size: 500% 500%;
+    animation-name: BackgroundGradient;  
+    animation-duration: 25s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+ @keyframes BackgroundGradient{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 70% 100%;}
+    70% {background-position: 100% 70%;}
+    100% {background-position: 0% 50%;}
+}
+
+/*Här startar Exempel-sidan */
+.container-example{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+}
+.exempel-text{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    letter-spacing: 1px;
+}
+/*Exempel-sidan*/
+/*Box som byter bakgrundsfärg*/
+@keyframes exempel1 { 
+    from {background-color: red;} 
+    to {background-color: yellow;} 
+    } 
+
+.box{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    animation-name: exempel1;
+    animation-duration: 7s;
+    margin: 5px;
+    animation-iteration-count: infinite;
+    }
+/*Box i rörelse*/
+  @keyframes exempel2{
+      0% {background-color: red; left: 0px;}
+      25%{background-color: violet; right: 20px;}
+      50% {background-color: green; right: 20px;}
+      75% {background-color: yellow; right: 20px;}
+      100% {background-color: turquoise; left: 100px;}
+  }
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: exempel2;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+  }
+
+/*Transition box 3*/
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: turquoise;
+    -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: width;
+    transition-duration: 2s;
+  }
+  
+.box3:hover {
+    width: 300px;
+  }
+
+/*Burger meny*/
+.burger-container {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    margin: 25px;
+    z-index: 10;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #e656c2c0;
+    margin: 6px 0;
+    transition: 0.4s;
+  } 
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    background-color: whitesmoke;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+    background-color: whitesmoke;
+  }
+
+  /*Här startar Media queries*/
+  @media only screen and (max-width: 1110px) {
+
+    .menu {
+        display: none;
+    }
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .burger-container{
+        display: inline-block;
+    }
+    .item-1{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row div {
+        display: block;
+    }
+}
